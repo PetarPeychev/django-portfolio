@@ -1,6 +1,10 @@
 from django.shortcuts import render
-
-# Create your views here.
+from projects.models import Project
 
 def index(request):
-    return render(request, 'index.html')
+
+    # Request the 3 most important projects from the DB
+    projects = Project.objects.order_by('-importance').all()[0:3]
+
+    # Render the index page with the 3 projects
+    return render(request, 'index.html', {'projects': projects})

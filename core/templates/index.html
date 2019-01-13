@@ -36,6 +36,22 @@
           former software engineering student at <strong><a href="https://softuni.org/">SoftUni</a></strong><br>
           endlessly <strong>curious</strong>, <strong>ambitious</strong> and <strong>inspired</strong> person
         </div>
+
+        <h2>Some of my Projects:</h2>
+
+        <div id="project-container">
+
+          {% for project in projects %}
+
+          <div class="card">
+            <h3>{{ project.name }}</h3>
+            <img src="{{ project.image.url }}" alt="project image">
+            <p>{{ project.summary }}</p>
+          </div>
+
+          {% endfor %}
+
+        </div>
       </main>
     </div>
   </body>
