@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>Petar Peychev</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="top-container">
+        <!-- Header and Logo -->
+        <header>
+          <img src="{% static 'logo.png' %}" alt="vitruvian man logo">
+          <h1>Petar Peychev</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="">projects</a></li>
+            <li><a href="">skills</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+        <img id = "portrait" src="{% static 'portrait.png' %}" alt="personal portrait" height="250px">
+        <div id="summary">
+          computer science student at <strong><a href="https://www.ntu.ac.uk/">Nottingham Trent University</a></strong><br>
+          former software engineering student at <strong><a href="https://softuni.org/">SoftUni</a></strong><br>
+          endlessly <strong>curious</strong>, <strong>ambitious</strong> and <strong>inspired</strong> person
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
