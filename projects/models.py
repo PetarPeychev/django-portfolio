@@ -3,6 +3,9 @@ import json
 
 class Project(models.Model):
 
+    # Name of the project (primary key)
+    name = models.CharField(max_length = 64, primary_key = True, default = 'Project')
+
     # Importance of the project used for sorting
     importance = models.PositiveSmallIntegerField()
 
