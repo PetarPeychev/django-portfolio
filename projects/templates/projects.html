@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'projects.css' %}">
+{% endblock %}
+
+{% block main %}
+
+<h2 id="projects-title">Past Projects:</h2>
+
+<div id="project-container">
+
+  {% for project in projects %}
+
+  <div class="card">
+    <h3>{{ project.name }}</h3>
+    <img src="{{ project.image.url }}" alt="project image">
+    <p>{{ project.summary }}</p>
+  </div>
+
+  {% endfor %}
+
+</div>
+{% endblock %}

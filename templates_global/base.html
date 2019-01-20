@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Petar Peychev{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+
+    {% block head %}{% endblock %}
+
+  </head>
+  <body>
+    <div id="container">
+
+      <div id="top-container">
+        <!-- Header and Logo -->
+        <header>
+          <img src="{% static 'logo.png' %}" alt="vitruvian man logo">
+          <h1>Petar Peychev</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="/projects">projects</a></li>
+            <li><a href="">skills</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <main>
+
+        {% block main %}
+          Missing "main" content block!
+        {% endblock %}
+
+      </main>
+    </div>
+  </body>
+</html>
