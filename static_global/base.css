@@ -39,6 +39,11 @@ header h1 {
   font-family: 'Lato', sans-serif;
   /* font-family: 'Libre Baskerville', serif; */
   font-weight: 400;
+  color: black;
+}
+
+header h1:hover {
+  color: #777;
 }
 
 header img {

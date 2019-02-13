@@ -8,3 +8,13 @@ def index(request):
 
     # Render the index template with the 3 projects
     return render(request, 'index.html', {'projects': projects})
+
+def skills(request):
+
+    # Render the skills page
+    return render(request, 'skills.html')
+
+def contact(request):
+
+    # Render the skills page
+    return render(request, 'contact.html')

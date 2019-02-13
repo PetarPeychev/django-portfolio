@@ -3,7 +3,7 @@
   margin: 0 auto;
   max-width: 700px;
   grid-gap: 20px;
-  grid-template-columns: 210px 210px 210px;
+  grid-template-columns: 220px 220px 220px;
 }
 
 #projects-title {
